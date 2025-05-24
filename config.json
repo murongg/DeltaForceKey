@@ -1,0 +1,68 @@
+{
+    "is_debug": false,
+    "is_loop": true,
+    "buy_btn_location": [
+        1977,
+        1106,
+        396,
+        79
+    ],
+    "product_name_location": [
+        1960,
+        203,
+        170,
+        57
+    ],
+    "product_price_location": [
+        387,
+        213,
+        204,
+        74
+    ],
+    "products": [
+        {
+            "name": "总裁会议室",
+            "type": "",
+            "expect_price": 2500000,
+            "floating_percentage_range": 0.0,
+            "enable_buy": false,
+            "buy_count": 1,
+            "already_buy_count": 0,
+            "position": [
+                1205,
+                200,
+                608,
+                205
+            ]
+        },
+        {
+            "name": ".45 ACP HS",
+            "type": "",
+            "expect_price": 43,
+            "floating_percentage_range": 0.0,
+            "enable_buy": true,
+            "buy_count": 5,
+            "already_buy_count": 5,
+            "position": [
+                1207,
+                417,
+                603,
+                199
+            ]
+        }
+    ],
+    "trade_btn_location": [
+        857,
+        38,
+        181,
+        66
+    ],
+    "buy_message_location": [
+        883,
+        116,
+        662,
+        230
+    ],
+    "exec_interval": 0.1,
+    "buy_confirm_interval": 0.5
+}

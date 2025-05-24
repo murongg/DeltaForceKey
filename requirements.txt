@@ -1,0 +1,7 @@
+PyAutoGUI
+keyboard
+paddleocr
+paddlepaddle
+PyQt5
+throttler
+pyinstaller

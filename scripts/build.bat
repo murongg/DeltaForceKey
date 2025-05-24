@@ -1,0 +1,1 @@
+ pyinstaller --name "牛角洲交易行抢货助手v1.2" --add-data ".\*.json;." --add-data ".\resources;resources" --icon ".\resources\images\icon.ico" --windowed --noconfirm --additional-hooks .\hooks --collect-all paddle --collect-all paddleocr --collect-all tqdm .\main.py

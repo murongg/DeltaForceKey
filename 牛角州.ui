@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>牛角洲交易行抢货助手v1.2 交流QQ群：885499673</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTabWidget" name="main_tab_widget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>主控</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_9" stretch="1,5">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="QGroupBox" name="main_operate_gox">
+              <property name="title">
+               <string>操作</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <item>
+                  <widget class="QPushButton" name="start_btn">
+                   <property name="text">
+                    <string>开始任务（ctrl+1）</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="stop_btn">
+                   <property name="text">
+                    <string>结束任务（ctrl+2）</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QGroupBox" name="program_log">
+              <property name="title">
+               <string>程序日志</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QTextEdit" name="log_text"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>物品配置</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+            <item>
+             <widget class="QGroupBox" name="product_config_box">
+              <property name="title">
+               <string>物品配置</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QScrollArea" name="product_config_scroll_area">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                 <widget class="QWidget" name="product_config_scroll_area_widget">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>98</width>
+                    <height>28</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="product_config_scroll_area_layout">
+                   <property name="spacing">
+                    <number>6</number>
+                   </property>
+                   <property name="leftMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="rightMargin">
+                    <number>6</number>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>6</number>
+                   </property>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="statement_box">
+              <property name="title">
+               <string>配置说明</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <widget class="QLabel" name="label">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>22</y>
+                 <width>201</width>
+                 <height>371</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>物品名称：一定要跟交易行的物品名称完全一致
+
+期望价格：你期望购买的最低价格
+
+浮动比率：期望价格超过这个比率也会购买，如果不想以期望价格的更高价格购买，就填0
+
+购买数量：超过这个购买数量就会停止购买
+
+当前位置：房卡在你交易行收藏页面的坐标
+
+每次修改完成后都要点击一下保存按钮</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <property name="maximumSize">
+          <size>
+           <width>696</width>
+           <height>423</height>
+          </size>
+         </property>
+         <attribute name="title">
+          <string>基础配置</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="5,2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5" stretch="1,1,5">
+            <item>
+             <widget class="QGroupBox" name="mode_box">
+              <property name="title">
+               <string>模式选择</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QCheckBox" name="debug_mode">
+                 <property name="text">
+                  <string>调试模式</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="loop_mode">
+                 <property name="text">
+                  <string>循环模式</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="params_box">
+              <property name="title">
+               <string>参数调配</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="1,1">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="exec_interval_label">
+                   <property name="text">
+                    <string>执行间隔（s）</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="exec_interval_spin_box">
+                   <property name="maximum">
+                    <double>10.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.100000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_7">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="buy_confirm_interval_label">
+                   <property name="text">
+                    <string>购买确认间隔（s）</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDoubleSpinBox" name="buy_confirm_interval_spin_box">
+                   <property name="maximum">
+                    <double>10.000000000000000</double>
+                   </property>
+                   <property name="singleStep">
+                    <double>0.100000000000000</double>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="position_box">
+              <property name="title">
+               <string>位置信息选择</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <layout class="QFormLayout" name="formLayout">
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="trade_btn_location_label">
+                   <property name="text">
+                    <string>交易行按钮位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="1">
+                  <widget class="QPushButton" name="trade_btn_location_btn">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string>点击选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QLabel" name="product_name_location_label">
+                   <property name="text">
+                    <string>交易行商品名称位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="1">
+                  <widget class="QPushButton" name="product_name_location_btn">
+                   <property name="text">
+                    <string>点击选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="0">
+                  <widget class="QLabel" name="product_price_location_label">
+                   <property name="text">
+                    <string>交易行价格位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="2" column="1">
+                  <widget class="QPushButton" name="product_price_location_btn">
+                   <property name="text">
+                    <string>点击选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="0">
+                  <widget class="QLabel" name="buy_btn_location_label">
+                   <property name="text">
+                    <string>交易行购买按钮位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="3" column="1">
+                  <widget class="QPushButton" name="buy_btn_location_btn">
+                   <property name="text">
+                    <string>点击选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="0">
+                  <widget class="QLabel" name="buy_message_location_label">
+                   <property name="text">
+                    <string>交易行购买成功消息位置</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="4" column="1">
+                  <widget class="QPushButton" name="buy_message_location_btn">
+                   <property name="text">
+                    <string>点击选择</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>参数说明</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>执行间隔：点击/切换页面等操作的执行间隔，该参数越低执行的越快，相反，如果网速慢的情况下，十分容易识别失败
+
+购买确认间隔：点击购买按钮后，对购买成功消息的确认时间，建议设置为 0.5~1s</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>免责声明</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="1,6">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">#label_2 {font-size: 20px;font-weight:bold;}</string>
+            </property>
+            <property name="text">
+             <string>免责声明</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="styleSheet">
+             <string notr="true">#label_3 { line-height:150%}</string>
+            </property>
+            <property name="text">
+             <string>本软件仅供学习和研究使用，禁止用于任何商业用途。使用本软件所产生的任何后果，作者不承担任何责任。
+
+本软件不保证其内容的准确性、完整性或可靠性。使用本软件即表示您同意承担所有风险。
+
+如果您不同意本免责声明，请勿使用本软件。
+        
+本软件采用 Python 编写，完全模拟鼠标操作，目前没有封号前例，但不保证未来不会封号，如有芥蒂，请勿使用。
+        
+交流QQ群：885499673</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignHCenter|Qt::AlignTop</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>722</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="add_product_menu">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>添加物品</string>
+    </property>
+   </widget>
+   <addaction name="add_product_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="save_config">
+   <property name="text">
+    <string>保存配置</string>
+   </property>
+  </action>
+  <action name="refresh_config">
+   <property name="text">
+    <string>刷新配置</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
